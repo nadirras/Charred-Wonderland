@@ -13,9 +13,9 @@ const artists = [
   },
   {
     name: "Tjiahaya",
-    avatar: "/comission/tjiahaya.png",
+    avatar: "/comission/Tjiahaya_Logo.png",
     bio: "A game master, an illustrator, a writer, a gamer, a hobbyist-dev depending on my mood, and others. I basically like doing and creating things.",
-    portfolios: ["/comission/tjiahaya.png", "/comission/tjiahaya.png"],
+    portfolios: ["/comission/Tjiahaya_Logo.png", "/comission/Tjiahaya_Logo.png"],
     contact: "https://x.com/honeybubblecia",
   },
 ];
