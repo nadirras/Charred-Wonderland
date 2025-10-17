@@ -15,7 +15,7 @@ export default function CatalogPreview() {
       <div className="max-w-6xl mx-auto px-4">
         {/* Heading */}
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl md:text-3xl font-serif text-neutral-800 dark:text-neutral-100">Catalog Preview</h2>
+          <h2 className="text-2xl md:text-3xl font-serif text-neutral-100">Catalog Preview</h2>
           <Link href="/catalog">
             <button className="btn btn-outline btn-sm md:btn-md rounded-full">See More →</button>
           </Link>

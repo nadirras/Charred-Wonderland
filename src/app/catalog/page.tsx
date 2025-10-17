@@ -19,8 +19,8 @@ export default function CatalogPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-neutral-100 dark:bg-neutral-900 py-12 px-4 flex flex-col items-center">
-      <h1 className="text-3xl md:text-4xl font-[IM_FELL_English_SC] mb-8 text-center text-neutral-800 dark:text-neutral-100">Catalog Preview</h1>
+    <div className="min-h-screen bg-neutral-900 py-12 px-4 flex flex-col items-center">
+      <h1 className="text-3xl md:text-4xl font-[IM_FELL_English_SC] mb-8 text-center text-neutral-100">Catalog Preview</h1>
 
       {/* Catalog Grid */}
       <div className="w-full max-w-5xl grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -30,7 +30,7 @@ export default function CatalogPage() {
             whileHover={{ scale: 1.03 }}
             transition={{ type: "spring", stiffness: 200 }}
             onClick={() => setSelectedImage(page.src)}
-            className="relative bg-white dark:bg-neutral-800 rounded-2xl shadow-lg overflow-hidden cursor-pointer"
+            className="relative bg-neutral-800 rounded-2xl shadow-lg overflow-hidden cursor-pointer"
           >
             <Image src={page.src} width={800} height={800} alt={page.alt} className="object-cover w-full h-auto" />
             <div className="absolute bottom-2 right-3 text-xs text-white bg-black/60 px-2 py-1 rounded-md">{page.alt}</div>

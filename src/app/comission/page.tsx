@@ -53,7 +53,7 @@ export default function ComponentPage() {
     <div className="min-h-screen bg-gradient-to-b from-base-200 to-base-100  py-16 px-6 flex flex-col items-center">
       {/* Header */}
       <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center mb-14">
-        <h1 className="text-4xl md:text-5xl font-[IM_FELL_English_SC] text-neutral-900 dark:text-neutral-100">Artist Commissions</h1>
+        <h1 className="text-4xl md:text-5xl font-[IM_FELL_English_SC] text-neutral-100">Artist Commissions</h1>
         <p className="mt-4 text-neutral-600  max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
           Meet our talented illustrators! Each artist brings their own charm — whether you’re seeking a book cover, OC art, or special event merchandise, you’ll find the perfect collaborator here.
         </p>
@@ -68,7 +68,7 @@ export default function ComponentPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-base-200/60 dark:bg-neutral-800/70 shadow-xl rounded-3xl overflow-hidden border border-base-300/30 p-6 flex flex-col items-center"
+            className="bg-neutral-800/70 shadow-xl rounded-3xl overflow-hidden border border-base-300/30 p-6 flex flex-col items-center"
           >
             {/* Artist Info */}
             <div className="flex flex-col items-center text-center space-y-4 w-full">
@@ -76,11 +76,11 @@ export default function ComponentPage() {
                 <Image src={artist.avatar} alt={`${artist.name} avatar`} fill className=" object-fit shadow-md" />
               </div>
 
-              <h2 className="text-xl md:text-2xl font-semibold text-neutral-800 dark:text-neutral-100 mt-2">{artist.name}</h2>
+              <h2 className="text-xl md:text-2xl font-semibold text-neutral-100 mt-2">{artist.name}</h2>
 
               {artist.fullBio ? (
                 <>
-                  <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed whitespace-pre-line">{expanded === index ? artist.fullBio : artist.shortBio}</p>
+                  <p className="text-sm text-neutral-400 leading-relaxed whitespace-pre-line">{expanded === index ? artist.fullBio : artist.shortBio}</p>
 
                   <button onClick={() => setExpanded(expanded === index ? null : index)} className="text-sm text-primary mt-2 flex items-center gap-1 hover:underline">
                     {expanded === index ? (
@@ -95,7 +95,7 @@ export default function ComponentPage() {
                   </button>
                 </>
               ) : (
-                <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed whitespace-pre-line">{artist.bio}</p>
+                <p className="text-sm text-neutral-400 leading-relaxed whitespace-pre-line">{artist.bio}</p>
               )}
 
               <a href={artist.contact} target="_blank" rel="noopener noreferrer" className="btn btn-outline btn-sm mt-3 flex items-center gap-2">
@@ -105,7 +105,7 @@ export default function ComponentPage() {
             </div>
 
             {/* Portfolio */}
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 mt-6 bg-base-300/40 dark:bg-neutral-700/30 w-full rounded-2xl">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 p-4 mt-6 bg-neutral-700/30 w-full rounded-2xl">
               {artist.portfolios.map((image, i) => (
                 <motion.div key={i} whileHover={{ scale: 1.05 }} className="relative rounded-xl overflow-hidden shadow-md group cursor-pointer" onClick={() => setPreviewImage(image)}>
                   <Image src={image} alt={`${artist.name} artwork ${i + 1}`} width={400} height={400} className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110" />

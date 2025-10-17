@@ -35,11 +35,14 @@ export default function BooksPage() {
   const [popupImage, setPopupImage] = useState<string | null>(null);
 
   return (
-    <div className="min-h-screen bg-base-100 dark:bg-neutral-900 py-16 px-4 flex flex-col items-center">
+    <div className="min-h-screen bg-neutral-900 py-16 px-4 flex flex-col items-center">
       {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl mb-4 font-[IM_FELL_English_SC]">My Books</h1>
-        <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed">
+        <p
+          className="
+        text-neutral-400 max-w-2xl mx-auto leading-relaxed"
+        >
           Step into the world of <span className="font-semibold">Thraver</span> — mysteries, secret organizations, and the fragile line between sanity and truth.
         </p>
       </div>
@@ -52,10 +55,10 @@ export default function BooksPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="card lg:card-side bg-base-200 dark:bg-neutral-800 shadow-xl rounded-2xl overflow-hidden hover:shadow-2xl duration-300"
+            className="card lg:card-side bg-neutral-800 shadow-xl rounded-2xl overflow-hidden hover:shadow-2xl duration-300"
           >
             {/* Cover */}
-            <div className="lg:w-1/3 flex items-center justify-center bg-base-300/40 dark:bg-neutral-700/30 p-6">
+            <div className="lg:w-1/3 flex items-center justify-center bg-neutral-700/30 p-6">
               <Image src={book.cover} alt={`${book.title} cover`} width={350} height={500} className="rounded-xl shadow-md object-cover" />
             </div>
 
@@ -68,7 +71,7 @@ export default function BooksPage() {
                 {book.tags && (
                   <div className="flex flex-wrap gap-2 mb-4">
                     {book.tags.map((tag, t) => (
-                      <span key={t} className="badge badge-outline text-xs text-neutral-600 dark:text-neutral-300">
+                      <span key={t} className="badge badge-outline text-xs text-neutral-300">
                         {tag}
                       </span>
                     ))}
