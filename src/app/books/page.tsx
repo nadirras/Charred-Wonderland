@@ -38,7 +38,7 @@ export default function BooksPage() {
     <div className="min-h-screen bg-neutral-900 py-16 px-4 flex flex-col items-center">
       {/* Header */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl mb-4 font-[IM_FELL_English_SC]">My Books</h1>
+        <h1 className="text-4xl md:text-5xl mb-4 font-[IM_FELL_English_SC] text-neutral-400">My Books</h1>
         <p
           className="
         text-neutral-400 max-w-2xl mx-auto leading-relaxed"
