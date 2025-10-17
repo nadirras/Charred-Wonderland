@@ -1,3 +1,4 @@
+import BookPreview from "@/components/home/BookPreview";
 import CatalogPreview from "@/components/home/CatalogPreview";
 import Hero from "@/components/home/Hero";
 import Navbar from "@/components/Navbar";
@@ -8,6 +9,7 @@ export default function Home() {
     <div>
       <Hero />
       <CatalogPreview />
+      <BookPreview />
     </div>
   );
 }

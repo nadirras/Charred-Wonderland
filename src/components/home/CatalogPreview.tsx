@@ -11,7 +11,7 @@ export default function CatalogPreview() {
   ];
 
   return (
-    <section className="py-12 bg-base-200">
+    <section id="#catalog_preview" className="py-12 bg-base-200">
       <div className="max-w-6xl mx-auto px-4">
         {/* Heading */}
         <div className="flex items-center justify-between mb-8">

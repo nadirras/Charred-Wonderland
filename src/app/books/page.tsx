@@ -38,7 +38,7 @@ export default function BooksPage() {
     <div className="min-h-screen bg-base-100 dark:bg-neutral-900 py-16 px-4 flex flex-col items-center">
       {/* Header */}
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-serif mb-4 text-neutral-800 dark:text-neutral-100">My Books</h1>
+        <h1 className="text-4xl md:text-5xl mb-4 font-[IM_FELL_English_SC]">My Books</h1>
         <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto leading-relaxed">
           Step into the world of <span className="font-semibold">Thraver</span> — mysteries, secret organizations, and the fragile line between sanity and truth.
         </p>
@@ -62,7 +62,7 @@ export default function BooksPage() {
             {/* Content */}
             <div className="p-8 lg:w-2/3 flex flex-col justify-between">
               <div>
-                <h2 className="text-2xl md:text-3xl font-serif mb-3 text-neutral-800 dark:text-neutral-100">{book.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-serif mb-3 text-neutral-100">{book.title}</h2>
 
                 {/* Tags */}
                 {book.tags && (
@@ -76,11 +76,11 @@ export default function BooksPage() {
                 )}
 
                 {/* Blurb */}
-                <p className="text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">{book.blurb}</p>
+                <p className="text-neutral-300 leading-relaxed mb-6">{book.blurb}</p>
 
                 {/* Image Previews */}
-                <div className="bg-base-300/30 dark:bg-neutral-700/30 p-4 rounded-lg">
-                  <p className="font-semibold mb-3 text-neutral-700 dark:text-neutral-200">✦ Book Preview</p>
+                <div className="bg-neutral-700/30 p-4 rounded-lg">
+                  <p className="font-semibold mb-3 text-neutral-200">✦ Book Preview</p>
 
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     <AnimatePresence initial={false}>
